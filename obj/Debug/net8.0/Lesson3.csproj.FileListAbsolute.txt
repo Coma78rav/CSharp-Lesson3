@@ -1,0 +1,15 @@
+D:\GB\CSharp\Lesson3\bin\Debug\net8.0\Lesson3.exe
+D:\GB\CSharp\Lesson3\bin\Debug\net8.0\Lesson3.deps.json
+D:\GB\CSharp\Lesson3\bin\Debug\net8.0\Lesson3.runtimeconfig.json
+D:\GB\CSharp\Lesson3\bin\Debug\net8.0\Lesson3.dll
+D:\GB\CSharp\Lesson3\bin\Debug\net8.0\Lesson3.pdb
+D:\GB\CSharp\Lesson3\obj\Debug\net8.0\Lesson3.GeneratedMSBuildEditorConfig.editorconfig
+D:\GB\CSharp\Lesson3\obj\Debug\net8.0\Lesson3.AssemblyInfoInputs.cache
+D:\GB\CSharp\Lesson3\obj\Debug\net8.0\Lesson3.AssemblyInfo.cs
+D:\GB\CSharp\Lesson3\obj\Debug\net8.0\Lesson3.csproj.CoreCompileInputs.cache
+D:\GB\CSharp\Lesson3\obj\Debug\net8.0\Lesson3.sourcelink.json
+D:\GB\CSharp\Lesson3\obj\Debug\net8.0\Lesson3.dll
+D:\GB\CSharp\Lesson3\obj\Debug\net8.0\refint\Lesson3.dll
+D:\GB\CSharp\Lesson3\obj\Debug\net8.0\Lesson3.pdb
+D:\GB\CSharp\Lesson3\obj\Debug\net8.0\Lesson3.genruntimeconfig.cache
+D:\GB\CSharp\Lesson3\obj\Debug\net8.0\ref\Lesson3.dll
