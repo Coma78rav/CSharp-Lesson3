@@ -63,27 +63,59 @@
 // Задание 2. Работа в сессионных залах
 // Задайте массив из N случайных целых чисел (N вводится с клавиатуры).
 // Найдите количество чисел, которые оканчиваются на 1 и делятся нацело на 7
-void inputArray(int[]array){ // Передача происходит по ссылке
+// void inputArray(int[]array){ // Передача происходит по ссылке
+//     for (int i = 0; i < array.Length; i++)
+//         array[i] = new Random().Next(1, 1001); // [1, 1000]
+// }
+// // [2; n // 2] - без делителей в диапазоне - простое
+//  bool isPrime(int x){
+//     for (int i = 2; i <= x/2; i++){
+//         if (x % i == 0)
+//             return false;
+//     }
+//     return true;
+//  }
+// Console.Clear();
+// Console.Write("Введите количество чисел: ");
+// int n = int.Parse(Console.ReadLine()!);
+// int[] array = new int [n];
+// inputArray(array);
+// Console.WriteLine($"Начальный массив: [{string.Join(", ", array)}]");
+// int count = 0; // вывод количества элементов
+// foreach (int element in array){ //таким образом нельзя изменить элементы массива
+//     if (element % 10 == 1 && element % 7 == 0)
+//             count++;
+// }
+// Console.WriteLine(count);
+
+// Задание 3. 
+// Заполните массив на N (вводится с консоли, не более 8) 
+// случайных целых чисел от 0 до 9.
+// Сформируйте целое число, которое будет состоять из цифр из
+// массива. Старший разряд числа находится на 0-м индексе,
+// младший – на последнем. 
+
+
+void inputArray(int[]array){ 
     for (int i = 0; i < array.Length; i++)
-        array[i] = new Random().Next(1, 1001); // [1, 1000]
+        array[i] = new Random().Next(0, 10); // [1, 1000]
 }
-// [2; n // 2] - без делителей в диапазоне - простое
- bool isPrime(int x){
-    for (int i = 2; i <= x/2; i++){
-        if (x % i == 0)
-            return false;
-    }
-    return true;
- }
+
 Console.Clear();
 Console.Write("Введите количество чисел: ");
 int n = int.Parse(Console.ReadLine()!);
+if (n > 8){
+    Console.Write("Вы ошиблись\nВведите количество чисел: ");
+    n = int.Parse(Console.ReadLine()!);
+}    
 int[] array = new int [n];
 inputArray(array);
 Console.WriteLine($"Начальный массив: [{string.Join(", ", array)}]");
-int count = 0; // вывод количества элементов
-foreach (int element in array){ //таким образом нельзя изменить элементы массива
-    if (element % 10 == 1 && element % 7 == 0)
-            count++;
+// 55944115 -8 цифр
+// 5*10^7 + 5*10^6 + 9*10^5 + ... 5*10^0
+int resultNumber = 0; int count = array.Length - 1;
+for (int i = 0; i < array.Length; i++){
+    resultNumber += array[i] * Convert.ToInt32(Math.Pow(10, count));
+    count --;
 }
-Console.WriteLine(count);
+Console.WriteLine(resultNumber);
